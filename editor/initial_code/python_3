@@ -1,19 +1,19 @@
-def soma(a,b):
+def ordem_desfile(n_recrutas, alturas):
     # escreva aqui seu código
     return None
 
 
 print("Example:")
-print(soma(3,2))
+print(ordem_desfile(5,[1500, 1600, 1700, 1700, 1800]))
 
 # As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
-# testa a função com números positivos como parâmetros
-assert soma(2, 3) == 5 
-    
-# testa a função com um número negativo como parâmetro
-assert soma(-1, 5) == 4
-    
-# testa a função com zero como parâmetro
-assert soma(0, 0) == 0
+# Teste 1
+assert ordem_desfile(5, [1500, 1600, 1700, 1700, 1800]) == 'S'
+
+# Teste 2
+assert ordem_desfile(5, [1900, 1850, 1800, 1750, 1700]) == 'N'
+
+# Teste 3
+assert ordem_desfile(5, [1600, 1600, 1600, 1600, 1600]) == 'S'
     
 print("Seu código passou pelos testes, clique em Check para avançar!")
