@@ -1,16 +1,17 @@
 <!-- Describe task in general -->
 
-<p>
-    Crie uma função que receba dois números inteiros como parâmetros e retorne a soma desses números.
-</p>
+<p>O sargento quer que os recrutas desfilem na parada em ordem de altura. Um recruta não pode desfilar depois de um recruta com altura maior do que a sua (pode desfilar se tem a mesma altura).</p>
+<p>O sargento coletou as alturas dos recrutas e fez uma lista com a ordem dos recrutas para o desfile. Mas ele não é bom de matemática e ordenou que você confira se a lista está corretamente ordenada.</p>
+<p>Dado o número de recrutas e uma lista com a ordem dos recrutas preparada pelo sargento, escreva um programa para determinar se a lista está ordenada por ordem de altura.</p>
+
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada: </strong> Dois números inteiros a e b.
+    <strong>Entrada: </strong> A primeira linha da entrada contém um número inteiro N, o número de recrutas na fila. Cada um dos elementos da lista contém um número inteiro Xi, a altura de um recruta, em milimetros, na ordem em que o sargento preparou.
 </p>
 
 <p>
-    <strong>Saída: </strong> Um número inteiro, que é a soma de a e b. 
+    <strong>Saída: </strong> Seu programa deve escrever uma única linha na saída, contendo o caractere 'S' se os recrutas estão em ordem não decrescente ou o caractere 'N' caso contrário. A ordem é não decrescente se a altura do próximo recruta a desfilar é maior ou igual à altura do recruta anterior.
 </p>
 
 
@@ -25,9 +26,11 @@
 countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
-<pre class="brush: python">soma(2,3) == 5
-soma(-1,5) == 4
-soma(0,0) == 0
+<pre class="brush: python">
+
+ordem_desfile(5, [1500, 1600, 1700, 1700, 1800]) == 'S'
+ordem_desfile(5, [1900, 1850, 1800, 1750, 1700]) == 'N'
+ordem_desfile(5, [1600, 1600, 1600, 1600, 1600]) == 'S'
 </pre>
 {% endif %}
 </div>
